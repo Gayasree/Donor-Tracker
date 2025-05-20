@@ -1,0 +1,86 @@
+/* Login.css */
+.login-page {
+  margin-top: 0;
+  padding-top: 0;
+  min-height: 100vh;
+  /* Background image will be set in the component */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.login-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.login-card-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.login-card-header {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #f33621; /* Blue color for login */
+  font-weight: bold;
+}
+
+.login-form-group {
+  margin-bottom: 20px;
+}
+
+.login-form-control {
+  border-radius: 6px;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  width: 100%;
+  font-size: 16px;
+}
+
+.login-submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #c40d06; /* Blue color for login */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.login-submit-button:hover {
+  background-color: #c40d06;
+}
+
+.login-error-message {
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #f2dede;
+  color: #c40d06;
+  font-weight: bold;
+}

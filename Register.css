@@ -1,0 +1,115 @@
+/* Register.css */
+.register-page {
+  margin-top: 0;
+  padding-top: 0;
+  min-height: 100vh;
+  /* We'll set the background image in the component */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.register-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.register-card-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 500px;
+}
+
+.register-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.register-card-header {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #c40d06;
+  font-weight: bold;
+}
+
+.register-form-group {
+  margin-bottom: 15px;
+}
+
+.register-form-control {
+  border-radius: 6px;
+  padding: 10px 12px;
+  border: 1px solid #ced4da;
+  width: 100%;
+  font-size: 16px;
+}
+
+.register-submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #c40d06;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.register-submit-button:hover {
+  background-color: #c40d06;
+}
+
+.register-message {
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #dff0d8;
+  color: #3c763d;
+  font-weight: bold;
+}
+
+.register-error-message {
+  background-color: #f2dede;
+  color: #c40d06;
+}
+
+.register-success-message {
+  background-color: #dff0d8;
+  color: #3c763d;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.register-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}

@@ -1,0 +1,114 @@
+/* DonorList.css */
+.donor-list-page {
+  margin-top: 0;
+  padding-top: 0;
+  min-height: 100vh;
+  /* Background image will be set in the component */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.donor-list-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.donor-list-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.donor-list-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.donor-list-header {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #f32f28; /* Green color for donor list */
+  font-weight: bold;
+}
+
+.donor-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.donor-list-table th {
+  background-color: #c40d06;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.donor-list-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.donor-list-table tr:hover {
+  background-color: rgba(248, 60, 54, 0.1);
+}
+
+.donor-list-table tr.new-donor {
+  animation: highlight 3s ease-in-out;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: rgba(40, 167, 69, 0.7);
+  }
+  70% {
+    background-color: rgba(40, 167, 69, 0.7);
+  }
+  100% {
+    background-color: rgba(40, 167, 69, 0.2);
+  }
+}
+
+.donor-list-loading {
+  text-align: center;
+  padding: 40px;
+}
+
+.donor-list-error {
+  text-align: center;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #f2dede;
+  color: #c40d06;
+}
+
+.donor-list-try-again {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #c40d06;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.donor-list-empty {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-style: italic;
+}
